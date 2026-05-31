@@ -51,7 +51,7 @@ export default function OnboardingScreen() {
           />
         </View>
 
-        <Link href="/" asChild>
+        <Link href="/sign-up" asChild>
           <Pressable className="h-[72px] flex-row items-center justify-center rounded-[22px] bg-lingua-deep-purple px-8">
             <Text className="font-poppins-semibold text-[20px] leading-[28px] text-white">Get Started</Text>
             <Text className="absolute right-8 font-poppins-regular text-[46px] leading-[46px] text-white">{"\u203a"}</Text>

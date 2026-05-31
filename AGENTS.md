@@ -445,6 +445,8 @@ npm run lint
 npm run typecheck
 ```
 
+Do not run the Expo development server (it requires manual interaction and is not available in the sandbox environment).
+
 Fix errors.
 
 ---
