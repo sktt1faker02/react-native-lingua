@@ -1,9 +1,69 @@
-:root {
-  --font-display:
-    Spline Sans, Inter, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji,
-    Segoe UI Symbol, Noto Color Emoji;
-  --font-mono:
-    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-  --font-rounded: 'SF Pro Rounded', 'Hiragino Maru Gothic ProN', Meiryo, 'MS PGothic', sans-serif;
-  --font-serif: Georgia, 'Times New Roman', serif;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+
+@import "nativewind/theme";
+
+@theme {
+  --color-lingua-purple: #6c4ef5;
+  --color-lingua-deep-purple: #5b3bf6;
+  --color-lingua-blue: #4d8bff;
+  --color-lingua-green: #21c16b;
+  --color-success: #21c16b;
+  --color-warning: #ffc800;
+  --color-streak: #ff8a00;
+  --color-error: #ff4d4f;
+  --color-info: #4d8bff;
+  --color-text-primary: #0d132b;
+  --color-text-secondary: #6b7280;
+  --color-border: #e5e7eb;
+  --color-surface: #f6f7fb;
+  --color-background: #ffffff;
+
+  --font-poppins: "Poppins-Regular";
+  --font-poppins-medium: "Poppins-Medium";
+  --font-poppins-semibold: "Poppins-SemiBold";
+  --font-poppins-bold: "Poppins-Bold";
+
+  --text-h1: 32px;
+  --text-h1--line-height: 1.2;
+  --text-h2: 24px;
+  --text-h2--line-height: 1.3;
+  --text-h3: 20px;
+  --text-h3--line-height: 1.3;
+  --text-h4: 16px;
+  --text-h4--line-height: 1.4;
+  --text-body-large: 16px;
+  --text-body-large--line-height: 1.6;
+  --text-body-medium: 14px;
+  --text-body-medium--line-height: 1.6;
+  --text-body-small: 13px;
+  --text-body-small--line-height: 1.6;
+  --text-caption: 11px;
+  --text-caption--line-height: 1.4;
+
+  --radius-swatch: 10px;
+  --radius-card: 14px;
+  --radius-button: 16px;
+}
+
+@utility lingua-screen {
+  @apply bg-background;
+}
+
+@utility lingua-card {
+  @apply rounded-card border border-border bg-background;
+  box-shadow: 0 8px 24px rgba(13, 19, 43, 0.04);
+}
+
+@utility lingua-section__title {
+  @apply text-h3 font-poppins-bold text-lingua-purple uppercase;
+}
+
+@utility lingua-divider {
+  @apply h-px bg-border;
+}
+
+@utility lingua-swatch {
+  @apply rounded-swatch;
 }
